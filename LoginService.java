@@ -1,6 +1,7 @@
 public class LoginService {
 
     public boolean login(String username, String password) {
+        System.out.println("Login attempt: " + username);
         return username.equals("admin") && password.equals("123");
     }
 
