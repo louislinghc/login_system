@@ -1,6 +1,9 @@
 public class LoginService {
 
     public boolean login(String username, String password) {
+        if(username == null || password == null) {
+            return false;
+        }
         return username.equals("admin") && password.equals("123");
     }
 
