@@ -4,6 +4,7 @@ public class LoginService {
         if(username == null || password == null) {
             return false;
         }
+        System.out.println("Login attempt: " + username);
         return username.equals("admin") && password.equals("123");
     }
 
