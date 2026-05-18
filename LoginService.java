@@ -2,6 +2,7 @@ public class LoginService {
 
     public boolean login(String username, String password) {
         if(username == null || password == null) {
+            System.out.println("Invalid input");
             return false;
         }
         System.out.println("Login attempt: " + username);
